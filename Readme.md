@@ -30,10 +30,10 @@ Timer
 
 | Name | Type | Required | Default | Description |
 | --- | --- | --- | --- | --- |
-| **id**   | number  | yes (if more than one timer used) | 1 | Element id is timerNo + **id**|
+| **id**   | number  | yes (only if more than one timer used) | 1 | HTML Element id is timerNo + **id**|
 | **started**   | boolean  | yes | N/A | Represents whether timer has started |
 | **paused**   | boolean  | yes | N/A | Represents whether timer is paused |
-| **pageBgColor**   | string  | yes | undefined | Color of background of page (Reqd. to make draw the hourglass)|
+| **pageBgColor**   | string  | yes | N/A | Color of background of page (Reqd. to make draw the hourglass)|
 | **outerColor**   | string  | no | 'white' | Color of empty part of hourglass|
 | **innerColor**   | string  | no | 'grey' | Color of sand part of hourglass|
 | **strokeColor**   | string  | no | 'black' | Color of border of hourglass|
