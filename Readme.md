@@ -28,8 +28,8 @@ API
 Timer
 ========
 
-| Name         | Type    | Required | Default | Description |
-| ------------ | ------- | ------- | ----------- |
+| Name | Type | Required | Default | Description |
+| --- | --- | --- | --- | --- |
 | **id**   | number  | yes (if more than one timer used) | 1 | Element id is timerNo + **id**|
 | **started**   | boolean  | yes | N/A | Represents whether timer has started |
 | **paused**   | boolean  | yes | N/A | Represents whether timer is paused |
