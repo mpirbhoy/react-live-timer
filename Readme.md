@@ -1,6 +1,6 @@
 Description
 ===============================
-React Live Timer (Hourglass animation for countdown)
+React Component for a live timer (Hourglass animation for countdown). Using this component will display an hourglass which you can start/pause/resume and which will countdown until given duration.  
 
 Usage
 ===============================
