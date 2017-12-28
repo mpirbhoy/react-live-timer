@@ -1,6 +1,6 @@
 {
   "name": "react-live-timer",
-  "version": "0.2.4",
+  "version": "0.3.0",
   "description": "React Live Timer (Hourglass animation for countdown)",
   "main": "dist/Timer.js",
   "scripts": {
