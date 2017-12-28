@@ -1,3 +1,7 @@
+Description
+===============================
+React Live Timer (Hourglass animation for countdown)
+
 Usage
 ===============================
 
