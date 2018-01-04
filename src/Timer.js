@@ -8,7 +8,8 @@ export default class Timer extends React.Component {
                     duration: (typeof this.props.duration != 'undefined' ? this.props.duration : 60) * 1000 ,
                     startTime: 0,
                     pauseTime: 0,
-                    pauseDuration: 0
+                    pauseDuration: 0,
+                    onCompleteTriggered: false
     };
   }  
 
@@ -46,15 +47,15 @@ export default class Timer extends React.Component {
       setTimeout(() => {
           this.setState({currentPercent: 100 * ((currentMoment - nextState.startTime - nextState.pauseDuration) / nextState.duration)});
         }, 5);
-    } else if (nextState.currentPercent >= 100 && typeof this.props.onComplete != 'undefined') {
-      this.props.onComplete();
+    } else if (nextState.currentPercent >= 100 && typeof nextProps.onComplete != 'undefined' && !nextState.onCompleteTriggered) {
+      this.setState({onCompleteTriggered: true}, nextProps.onComplete);
     }
   }
 
   render() {
     return (
       <div>
-        <canvas id={"timerNo" + (typeof this.props.id != 'undefined' ? this.props.id : 1)}  className="timer" width={40 * (typeof this.props.size != 'undefined' ? this.props.size : 10)} height={50 * (typeof this.props.size != 'undefined' ? this.props.sizez : 10)} />        
+        <canvas id={"timerNo" + (typeof this.props.id != 'undefined' ? this.props.id : 1)}  className="timer" width={40 * (typeof this.props.size != 'undefined' ? this.props.size : 10)} height={25 * (typeof this.props.size != 'undefined' ? this.props.size : 10)} />        
       </div>
     );
   }
